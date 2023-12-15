@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro Regressivo</title>
+</head>
+<body>
+!-- Cria uma página HTML com javaScript que mostra um
+!-- cronometro na página
+
+  <h1 id="countdown">Tempo Restante: </h1>
+
+  <script>
+    // Defina a data de término (substitua com sua data desejada)
+    const endDate = new Date('2023-12-31T00:00:00');
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const timeDifference = endDate - now;
+
+      // Calcula dias, horas, minutos e segundos
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+      // Atualiza o elemento HTML com o tempo restante
+      document.getElementById('countdown').innerHTML = `Tempo Restante: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      // Se o tempo acabou, exibe uma mensagem ou executa alguma ação
+      if (timeDifference <= 0) {
+        document.getElementById('countdown').innerHTML = 'Tempo Encerrado!';
+        // Você pode adicionar mais ações aqui, se necessário
+      }
+    }
+
+    // Atualiza o cronômetro a cada segundo
+    setInterval(updateCountdown, 1000);
+    
+    // Chama a função uma vez para evitar atrasos no início
+    updateCountdown();
+  </script>
+
+</body>
+</html>
