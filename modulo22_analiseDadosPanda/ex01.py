@@ -1,4 +1,3 @@
-
 import pandas as pd
 
 vendas_df = pd.read_csv(r'C:\Users\ca049341\Documents\MEUS DOCS\Python-Impressionador-Hashteag\pdfFiles\ESFTP001.csv', sep=';')

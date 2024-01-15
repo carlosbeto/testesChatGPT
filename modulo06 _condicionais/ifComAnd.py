@@ -5,6 +5,6 @@ vendasloja = 40000
 
 if vendasFuncionaario > metaFuncionário and vendasloja > metaLoja:
     bonus = 0.03 * vendasFuncionaario
-    print('Bonus do funcionário doi de {}' .format(bonus))
+    print('Bonus do funcionário foi de {}' .format(bonus))
 else:
     print('Funcionário não ganhou bônus')
