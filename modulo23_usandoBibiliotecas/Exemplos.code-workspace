@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../HashTag_javaScript/web"
+		},
+		{
+			"path": "../../../HashTag_javaScript/modulo-04-aula3/quero_assistir"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../HashTag_javaScript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "quero_assistir"
+	}
+}
