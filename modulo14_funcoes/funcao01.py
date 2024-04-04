@@ -6,4 +6,4 @@ def calcular_media(nota1, nota2):
     media = (float(nota1) + float(nota2)) / 2
     return print('A média das notas é: {}'.format(media))
 
-calcular_media(10, 5)
+calcular_media(nota1, nota2);
